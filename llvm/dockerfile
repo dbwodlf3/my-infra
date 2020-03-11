@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 #계정
 RUN useradd --create-home --shell /bin/bash hi && echo 'hi':'hi' | chpasswd
@@ -24,5 +24,8 @@ RUN /bin/sh -c "vim -E -s -u '/root/.vimrc' +PlugInstall +qall & > /dev/null && 
 
 #llvm clang 설치
 RUN apt-get install -y -qq llvm clang
+
+#빌드 툴 설치
+RUN sudo apt-get install build-essential
 
 EXPOSE 22
