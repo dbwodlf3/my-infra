@@ -15,7 +15,7 @@ RUN apt-get install -y iproute2
 # vim 설치
 ADD https://raw.githubusercontent.com/dbwodlf3/mine-docker-file/master/llvm/.vimrc /root
 
-RUN apt-get install -y -qq vim
+# RUN apt-get install -y -qq vim
 RUN curl -fLo /root/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
 
