@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+    kim:
+        image: binary_analysis_default
+        volumes:
+            - "./myinit.sh:/usr/local/bin/myinit.sh"
+        command:
+                - /usr/local/bin/myinit.sh
+        ports:
+            - "1253:22"
+        environment:
+            - TERM=xterm-256color
+            - mypasswd=mypasswd
+        deploy:
+            restart_policy:
+                condition: on-failure
+                delay: 5s
+                max_attempts: 3
+				window: 120s
+    kim2:
+        image: binary_analysis_default
+        volumes:
+            - "./myinit.sh:/usr/local/bin/myinit.sh"
+        command:
+                - /usr/local/bin/myinit.sh
+        ports:
+            - "1253:22"
+        environment:
+            - TERM=xterm-256color
+            - mypasswd=mypasswd
+        deploy:
+            restart_policy:
+                condition: on-failure
+                delay: 5s
+                max_attempts: 3
+                window: 120s
