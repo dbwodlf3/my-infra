@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  php-server:
+    context: .
+    dockerfile: ./dockerfile
+    restart: always
+    ports:
+      - 8253:80
+    volumes:
+      - ./init.sh:/usr/local/bin/init.sh
+    command: "init.sh"
