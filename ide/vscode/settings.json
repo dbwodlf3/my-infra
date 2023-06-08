@@ -1,0 +1,11 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.rulers": [80],
+    "editor.renderWhitespace": "all",
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Material Theme High Contrast",
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
