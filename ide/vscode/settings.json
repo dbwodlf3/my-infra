@@ -6,6 +6,7 @@
     "editor.autoClosingBrackets": "never",
     "explorer.autoReveal": false
     "workbench.colorTheme": "Material Theme High Contrast",
+    "workbench.editor.wrapTabs": true,
     "typescript.tsdk": "node_modules/typescript/lib",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
