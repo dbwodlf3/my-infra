@@ -4,7 +4,7 @@
         80
     ],
     "editor.renderWhitespace": "all",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.autoClosingBrackets": "never",
     "explorer.autoReveal": false,
     "workbench.editor.wrapTabs": true,
@@ -14,13 +14,16 @@
     "[markdown]": {
         "editor.formatOnSave": false
     },
+    "terminal.integrated.useWslProfiles": true,
     "terminal.integrated.defaultProfile.windows": "Ubuntu",
+    "terminal.integrated.splitCwd": "initial",
     "terminal.integrated.profiles.windows": {
         "Ubuntu": {
             "path": "wsl.exe",
             "args": ["-d", "Ubuntu"],
             "icon": "terminal-linux"
-        },
+        }
     },
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "github.copilot.nextEditSuggestions.enabled": false
 }
-
