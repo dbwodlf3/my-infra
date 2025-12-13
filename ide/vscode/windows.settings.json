@@ -15,13 +15,12 @@
         "editor.formatOnSave": false
     },
     "terminal.integrated.useWslProfiles": true,
-    "terminal.integrated.defaultProfile.windows": "Ubuntu",
+    "terminal.integrated.defaultProfile.windows": "MSYS2 zsh (UCRT64)",
     "terminal.integrated.splitCwd": "initial",
     "terminal.integrated.profiles.windows": {
-        "Ubuntu": {
-            "path": "wsl.exe",
-            "args": ["-d", "Ubuntu"],
-            "icon": "terminal-linux"
+        "MSYS2 zsh (UCRT64)": {
+            "path": "C:\\msys64\\msys2_shell.cmd",
+            "args": ["-defterm", "-here", "-no-start", "-ucrt64", "-shell", "zsh"]
         }
     },
     "editor.inlineSuggest.edits.renderSideBySide": "never",
