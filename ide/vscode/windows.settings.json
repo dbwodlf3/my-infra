@@ -15,12 +15,18 @@
         "editor.formatOnSave": false
     },
     "terminal.integrated.useWslProfiles": true,
+
     "terminal.integrated.defaultProfile.windows": "MSYS2 zsh (UCRT64)",
+
     "terminal.integrated.splitCwd": "initial",
     "terminal.integrated.profiles.windows": {
         "MSYS2 zsh (UCRT64)": {
-            "path": "C:\\msys64\\msys2_shell.cmd",
-            "args": ["-defterm", "-here", "-no-start", "-ucrt64", "-shell", "zsh"]
+            "path": "C:\\msys64\\usr\\bin\\zsh.exe",
+            "args": ["-l"],
+            "env": {
+            "MSYSTEM": "UCRT64",
+            "CHERE_INVOKING": "1"
+            }
         }
     },
     "editor.inlineSuggest.edits.renderSideBySide": "never",
